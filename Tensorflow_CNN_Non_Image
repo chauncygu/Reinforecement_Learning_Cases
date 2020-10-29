@@ -22,6 +22,8 @@ W = np.array([[
     [-2, 0, 2 ]
 ]], dtype=np.float32)
 b = np.array([1], dtype=np.float32)
+
+#建立一个仅有一个卷积层的模型，用 W 和 b 初始化
 model = tf.keras.models.Sequential([
     tf.keras.layers.Conv2D(
         filters=1,              # 卷积层神经元（卷积核）数目
